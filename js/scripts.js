@@ -23,10 +23,11 @@ $(document).ready(function() {
     });
 
     $(".delete-me").off().click(function() {
-      console.log("theclickworked");
-      debugger;
+      // console.log("theclickworked");
+      // debugger;
       var deletedObject = $(this).prev().addClass('strike-out');
-      $("#done-chores").append($(this).prev());
+      console.log($(this).prev());
+      $("#done-chores").append("<li>" + $(this).prev().text() + "</li>");
       $(this).parent().remove();
     });
 
