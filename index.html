@@ -9,32 +9,33 @@
     <title>To Do List!</title>
   </head>
   <body>
-    <h1>To Do List</h1>
-    <p>This To Do List will make your life so much better.</p>
-    <form class="to-do-list" action="index.html" method="post">
-      <div class="form-group">
-        <label for="chore" class="form-control">Type in the chore name.</label>
-        <input type="text" class="chore" name="chore">
-      </div><!--end form-group-->
-      <div class="form-group">
-        <label for="description" class="form-control">Chore description.</label>
-        <input type="text" class="description" name="description">
-      </div><!--end form-group-->
-      <button class="btn-success btn" type="submit" name="button">Add me to the list!</button>
-    </form>
-    <div class="list">
-      <ul id="chores">
+    <div class = "container">
+      <h1>To Do List</h1>
+      <p>This To Do List will make your life so much better.</p>
+      <form class="to-do-list">
+        <div class="form-group">
+          <label for="chore">Type in the chore name.</label>
+          <input type="text" class="chore form-control" name="chore">
+        </div><!--end form-group-->
+        <div class="form-group">
+          <label for="description">Chore description.</label>
+          <input type="text" class="description form-control" name="description">
+        </div><!--end form-group-->
+        <button class="btn-success btn" type="submit" name="button">Add me to the list!</button>
+      </form>
+      <div class="list">
+        <ul id="chores">
 
-      </ul>
-
-    </div>
-    <div class="col-md-6">
-      <div id="show-chores">
-        <h2></h2>
-        <p>Description: <span class="describe"></span></p>
+        </ul>
 
       </div>
-    </div>
+      <div class="col-md-6">
+        <div id="show-chores">
+          <h2></h2>
+          <p>Description: <span class="describe"></span></p>
 
+        </div>
+      </div>
+    </div>
   </body>
 </html>

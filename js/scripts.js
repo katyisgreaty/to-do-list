@@ -14,19 +14,16 @@ $(document).ready(function() {
 
     var newToDoList = new ToDoList(inputtedChore, inputtedDescription);
 
-    $("ul#chores").append("<li><span class='chore-list'>" + newToDoList.chore + "</span><div class='itemDescription'><button class='finish btn btn-primary'>Finished!</button></div></li>");
+    $("ul#chores").append("<li><span class='chore-list'>" + newToDoList.chore + "</span><button type='button' class='delete-me'>Delete</button></li>");
 
     $(".chore-list").last().click(function() {
-      $(this.).show();
+      $("#show-chores").show();
       $("#show-chores h2").text(newToDoList.chore);
       $(".describe").text(newToDoList.describe);
-      // $("#show-chores").append("<button class='finish btn btn-primary'>Finished!</button>");
-      // $(".finish").click(function() {
-      //
-      // });
-
-      //try .next() to select div in your click event handler
-
+    });
+    $(".delete-me").click(function() {
+      console.log("theclickworked");
+      $(this).prev().addClass('strike-out');
     });
 
     $("input.chore").val("");

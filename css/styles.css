@@ -9,3 +9,16 @@
 .new {
   background-color: beige;
 }
+
+.strike-out {
+  text-decoration: line-through;
+  color: red;
+}
+
+.delete-me {
+  margin-left: 10px;
+}
+
+li {
+  padding-top: 10px;
+}
