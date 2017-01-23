@@ -10,7 +10,7 @@ $(document).ready(function() {
   $("form.to-do-list").submit(function(event) {
     event.preventDefault();
     var inputtedChore = $('input.chore').val();
-    var inputtedDescription = $('description.chore').val();
+    var inputtedDescription = $('input.description').val();
 
     var newToDoList = new ToDoList(inputtedChore, inputtedDescription);
 
@@ -20,7 +20,9 @@ $(document).ready(function() {
       $("#show-chores").show();
       $("#show-chores h2").text(newToDoList.chore);
       $(".describe").text(newToDoList.describe);
-;
     });
+
+    $("input.chore").val("");
+    $("input.description").val("");
   });
 });
