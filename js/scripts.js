@@ -24,9 +24,10 @@ $(document).ready(function() {
     $(".delete-me").click(function() {
       console.log("theclickworked");
       $(this).prev().addClass('strike-out');
+      $(this).remove();
     });
 
     $("input.chore").val("");
     $("input.description").val("");
-    });
+  });
 });
