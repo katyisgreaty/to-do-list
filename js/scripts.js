@@ -21,10 +21,13 @@ $(document).ready(function() {
       $("#show-chores h2").text(newToDoList.chore);
       $(".describe").text(newToDoList.describe);
     });
-    $(".delete-me").click(function() {
+
+    $(".delete-me").off().click(function() {
       console.log("theclickworked");
-      $(this).prev().addClass('strike-out');
-      $(this).remove();
+      debugger;
+      var deletedObject = $(this).prev().addClass('strike-out');
+      $("#done-chores").append($(this).prev());
+      $(this).parent().remove();
     });
 
     $("input.chore").val("");

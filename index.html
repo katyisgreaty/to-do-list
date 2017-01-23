@@ -22,18 +22,29 @@
           <input type="text" class="description form-control" name="description">
         </div><!--end form-group-->
         <button class="btn-success btn" type="submit" name="button">Add me to the list!</button>
+        <button class="btn btn-info" type="button" name="button">Show All</button>
       </form>
-      <div class="list">
-        <ul id="chores">
 
-        </ul>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="list">
+            <ul id="chores">
 
-      </div>
-      <div class="col-md-6">
-        <div id="show-chores">
-          <h2></h2>
-          <p>Description: <span class="describe"></span></p>
+            </ul>
 
+          </div>
+          <div class="col-md-4">
+            <div id="show-chores">
+              <h2></h2>
+              <p>Description: <span class="describe"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <ul id="done-chores">
+
+          </ul>
         </div>
       </div>
     </div>
