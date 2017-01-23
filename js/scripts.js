@@ -14,15 +14,22 @@ $(document).ready(function() {
 
     var newToDoList = new ToDoList(inputtedChore, inputtedDescription);
 
-    $("ul#chores").append("<li><span class='chore-list'>" + newToDoList.chore + "</span></li>");
+    $("ul#chores").append("<li><span class='chore-list'>" + newToDoList.chore + "</span><div class='itemDescription'><button class='finish btn btn-primary'>Finished!</button></div></li>");
 
     $(".chore-list").last().click(function() {
-      $("#show-chores").show();
+      $(this.).show();
       $("#show-chores h2").text(newToDoList.chore);
       $(".describe").text(newToDoList.describe);
+      // $("#show-chores").append("<button class='finish btn btn-primary'>Finished!</button>");
+      // $(".finish").click(function() {
+      //
+      // });
+
+      //try .next() to select div in your click event handler
+
     });
 
     $("input.chore").val("");
     $("input.description").val("");
-  });
+    });
 });
