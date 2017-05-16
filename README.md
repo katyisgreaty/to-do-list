@@ -4,12 +4,6 @@
 
 #### By _**Jiwon Kang, Elise St Hilaire and Katy Daviscourt**_
 
-## Specifications
-
-**Saves locations and times to visit in a nice,  in unordered list**
-* Input: Seattle, Spaceneedle, fall, old people are so mean.
-* Output: Location: Seattle, Landmarks: Spaceneedle, Time of Year: fall
-
 ## Setup/Installation Requirements
 
 * _Open the page_
